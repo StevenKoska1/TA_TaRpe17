@@ -18,7 +18,7 @@ namespace Kangelased
 		public string Nimi { get => _Nimi; set => _Nimi = value; }
 		public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
 		
-		public int Päästa(int Ohustatuid)
+		virtual public int Päästa(int Ohustatuid)
 		{
 			return (int)Math.Round(Ohustatuid * .95);
 		}
